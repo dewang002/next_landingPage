@@ -75,7 +75,7 @@ export default function Reviews() {
                 Real reviews from our customers.
             </h2>
             <div className="flex flex-col lg:flex-row gap-8">
-                <div className="flex flex-col">
+                <div className="flex flex-col items-center gap-4">
                     <Image
                         src="/Lady.avif"
                         alt="Main reviewer"
@@ -85,7 +85,7 @@ export default function Reviews() {
                     />
                     <div className="flex flex-col items-center gap-10">
                         <h1 className="text-4xl text-center">House Cleaning & Organization Designed for Delight</h1>
-                        <p className="text-md">Better Life is committed to helping you spend more time on what matters most, this is our singular goal and promise to you. As one of the finest St. Louis cleaning companies and a leader in the industry, we enjoy bringing a consistently delightful service that sets the standard for health and safety. Our team employs proven yet innovative processes and practices, all designed to improve the quality of your life and keep your family and pets safe. We are known and loved for the eco-friendly cleaning services we provide across St. Louis and the area, so leave the chores to us and enjoy a healthy home and more time for what truly matters. And now you can have us help implement organizational systems in your home as well. Just let us know how we can help.</p>
+                        <p className="text-lg leading-loose">Better Life is committed to helping you spend more time on what matters most, this is our singular goal and promise to you. As one of the finest St. Louis cleaning companies and a leader in the industry, we enjoy bringing a consistently delightful service that sets the standard for health and safety. Our team employs proven yet innovative processes and practices, all designed to improve the quality of your life and keep your family and pets safe. We are known and loved for the eco-friendly cleaning services we provide across St. Louis and the area, so leave the chores to us and enjoy a healthy home and more time for what truly matters. And now you can have us help implement organizational systems in your home as well. Just let us know how we can help.</p>
                         <h2 className="text-xl">– Angela Ricketts, Founder</h2>
                         <Button variant={"outline"} className="w-fit rounded-full text-pink-500 outline outline-pink-500">Get Instant Price</Button>
                     </div>
