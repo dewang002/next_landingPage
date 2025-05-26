@@ -156,7 +156,7 @@ export default function Reviews() {
                                             </div>
                                             <span className="text-sm font-medium">{review.name}</span>
                                         </div>
-                                        <img src="/google-icon.svg" alt="Google" className="w-4 h-4" />
+                                        <Image width={100} src="/google-icon.svg" alt="Google" className="w-4 h-4" />
                                     </div>
                                 </div>
                             </CarouselItem>

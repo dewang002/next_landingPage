@@ -2,9 +2,8 @@
 
 import Image from 'next/image';
 import { PlayCircle } from 'lucide-react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog';
-import { DialogDescription } from '@radix-ui/react-dialog';
-import { video } from 'motion/react-client';
+import { Dialog, DialogContent, DialogTrigger } from './ui/dialog';
+
 
 const stories = [
     {

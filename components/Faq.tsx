@@ -6,7 +6,6 @@ import {
   } from '@radix-ui/react-accordion'
   import React from 'react'
   import { Plus } from 'lucide-react'
-  import { cn } from '@/lib/utils' // Optional: helper for class merging if using ShadCN boilerplate
   
   const faqItems = [
     {

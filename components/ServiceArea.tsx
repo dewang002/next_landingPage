@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from './ui/button'
-import { Drawer, DrawerTrigger, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerFooter, DrawerClose } from './ui/drawer'
+import { Drawer, DrawerTrigger, DrawerContent, DrawerHeader, DrawerTitle, DrawerFooter, DrawerClose } from './ui/drawer'
 
 const ServiceArea = () => {
     return (

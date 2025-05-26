@@ -1,4 +1,5 @@
-import { PlayCircle, PlayCircleIcon } from "lucide-react";
+import { PlayCircle } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const features = [
@@ -35,7 +36,9 @@ const Founder = () => {
             className="bg-white rounded-2xl shadow p-4 flex flex-col items-center"
           >
             <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-4">
-              <img
+              <Image
+                width={100}
+                height={100}
                 src={feature.image}
                 alt={feature.title}
                 className="w-full h-full object-cover"

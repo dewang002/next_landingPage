@@ -6,7 +6,6 @@ import {
     CardTitle,
     CardDescription,
     CardContent,
-    CardFooter
 } from './ui/card'
 
 const features = [
