@@ -11,22 +11,22 @@ const ServiceArea = () => {
                 </DrawerTrigger>
                 <DrawerContent className='flex flex-col items-center'>
                     <DrawerHeader>
-                        <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                        <DrawerTitle>India </DrawerTitle>
                     </DrawerHeader>
                     <DrawerHeader>
-                        <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                        <DrawerTitle>USA</DrawerTitle>
                     </DrawerHeader>
                     <DrawerHeader>
-                        <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                        <DrawerTitle>Bangladesh</DrawerTitle>
                     </DrawerHeader>
                     <DrawerHeader>
-                        <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                        <DrawerTitle>Nepal</DrawerTitle>
                     </DrawerHeader>
                     <DrawerHeader>
-                        <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                        <DrawerTitle>Europe</DrawerTitle>
                     </DrawerHeader>
                     <DrawerHeader>
-                        <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+                        <DrawerTitle>Russia</DrawerTitle>
                     </DrawerHeader>
                     <DrawerFooter>
                         <DrawerClose>
