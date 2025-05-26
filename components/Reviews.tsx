@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "./ui/button"
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel"
+import { Star } from "lucide-react";
 
 export default function Reviews() {
     const reviews = [
@@ -119,7 +120,14 @@ export default function Reviews() {
                 </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-12">
+                <div className="flex justify-between">
+                    <div className="text-xl">
+                        <h2>What our cliets say about us</h2>
+                        <div className="flex items-center gap-2"> 4.90 <Star color="" fill="gold" /> <span className="text-neutral-300 text-sm"> | 1349</span> </div>
+                    </div>
+                    <Button>Write a review</Button>
+                </div>
                 <Carousel>
                     <CarouselContent>
                         {reviewCards.map((review, index) => (

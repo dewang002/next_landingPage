@@ -1,4 +1,7 @@
+import Featured from '@/components/Featured'
+import Founder from '@/components/Founder'
 import HeroPage from '@/components/HeroPage'
+import Quality from '@/components/Quality'
 import Reviews from '@/components/Reviews'
 import ServiceArea from '@/components/ServiceArea'
 import Stories from '@/components/Stories'
@@ -11,6 +14,9 @@ const Home = () => {
       <Stories />
       <ServiceArea />
       <Reviews />
+      <Founder />
+      <Featured />
+      <Quality />
     </div>
   )
 }
