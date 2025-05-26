@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { div } from 'motion/react-client';
 import { Button } from './ui/button';
 import Image from 'next/image';
 
@@ -49,11 +48,10 @@ const HeroPage = () => {
     };
 
     return (
-        <div className='h-[100vh] w-full'>
-            <div className='h-40 w-full flex text-4xl justify-center font-semibold mt-24'>
-                <span style={{ color: '#333' }}>Making life better, with </span>
-                <div
-                    className='inline-block mx-8 min-w-[150px] h-[60px] relative overflow-hidden flex-shrink-0 '>
+        <div className='w-full min-h-screen flex flex-col justify-center items-center px-4 sm:px-8 lg:px-24 py-16'>
+            <div className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold text-center flex flex-wrap justify-center items-center gap-3'>
+                <span className="text-gray-800">Making life better, with</span>
+                <div className='relative inline-block lg:h-[50px] h-[40px] min-w-[120px] sm:min-w-[170px] overflow-hidden'>
                     <AnimatePresence mode='wait'>
                         <motion.span
                             key={currentSentenceIndex}
@@ -61,31 +59,39 @@ const HeroPage = () => {
                             initial="initial"
                             animate="animate"
                             exit="exit"
-                            style={{
-                                display: 'inline-block',
-                                color: 'blue',
-                                position: 'absolute',
-                                left: '0',
-                                whiteSpace: 'nowrap',
-                            }}>
+                            className="absolute left-0 text-blue-600 whitespace-nowrap"
+                        >
                             {sentences[currentSentenceIndex]}
                         </motion.span>
                     </AnimatePresence>
                 </div>
-                <span> you trust</span>
+                <span className="text-gray-800">you trust</span>
             </div>
 
-            <div className='w-full h-96 flex'>
-                <div className='w-[60%] h-full flex flex-col gap-10 px-24'>
-                    <div className='text-6xl font-bold'>Experience Elevated St. Louis House Cleaning</div>
-                    <div>At Better Life Home Cleaning, our mission is to enhance your quality of life through exceptional cleaning services. Prioritizing health and safety, we provide comprehensive St. Louis house cleaning solutions tailored to your needs. Discover the difference with Better Life Home Cleaning today.</div>
-                    <Button className='rounded-full p-6 w-fit'>Get Instant Price</Button>
+            <div className='w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-12'>
+                <div className='w-full lg:w-3/5 flex flex-col gap-6 text-center lg:text-left'>
+                    <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold'>
+                        Experience Elevated St. Louis House Cleaning
+                    </h2>
+                    <p className='text-base sm:text-lg text-gray-600'>
+                        At Better Life Home Cleaning, our mission is to enhance your quality of life through exceptional cleaning services. Prioritizing health and safety, we provide comprehensive St. Louis house cleaning solutions tailored to your needs. Discover the difference with Better Life Home Cleaning today.
+                    </p>
+                    <div className="flex justify-center lg:justify-start">
+                        <Button className='rounded-full px-6 py-3 text-base sm:text-lg'>Get Instant Price</Button>
+                    </div>
                 </div>
-                <div className='w-[40%] h-full'>
-                    <Image src={'/heroImage.webp'} height={360} width={360} alt='heroimg' />
+
+                <div className='w-full lg:w-2/5 flex justify-center'>
+                    <Image
+                        src="/heroImage.webp"
+                        width={400}
+                        height={400}
+                        alt="heroimg"
+                        className="w-full max-w-[360px] h-auto"
+                        priority
+                    />
                 </div>
             </div>
-
         </div>
     );
 };
